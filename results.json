@@ -1,0 +1,19 @@
+{
+  "eval_queries": 154,
+  "corpus_size": 270,
+  "seed": 42,
+  "models": {
+    "minilm": {
+      "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+      "base":  {"recall@1": 0.747, "recall@5": 0.981, "recall@10": 0.994, "mrr@10": 0.855, "ndcg@10": 0.890, "accuracy@1": 0.747},
+      "tuned": {"recall@1": 0.877, "recall@5": 0.994, "recall@10": 1.000, "mrr@10": 0.934, "ndcg@10": 0.951, "accuracy@1": 0.877},
+      "delta": {"recall@1": 0.130, "recall@5": 0.013, "recall@10": 0.007, "mrr@10": 0.078, "ndcg@10": 0.060, "accuracy@1": 0.130}
+    },
+    "bge": {
+      "base_model": "BAAI/bge-small-en-v1.5",
+      "base":  {"recall@1": 0.844, "recall@5": 1.000, "recall@10": 1.000, "mrr@10": 0.915, "ndcg@10": 0.937, "accuracy@1": 0.844},
+      "tuned": {"recall@1": 0.929, "recall@5": 1.000, "recall@10": 1.000, "mrr@10": 0.962, "ndcg@10": 0.971, "accuracy@1": 0.929},
+      "delta": {"recall@1": 0.084, "recall@5": 0.000, "recall@10": 0.000, "mrr@10": 0.046, "ndcg@10": 0.034, "accuracy@1": 0.084}
+    }
+  }
+}
