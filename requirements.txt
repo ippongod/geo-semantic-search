@@ -1,0 +1,10 @@
+# Minimal, clean stack — NO bitsandbytes, NO QLoRA (small model, full fine-tune).
+# torch is intentionally NOT pinned: use Colab's pre-installed CUDA build.
+#
+# sentence-transformers 3.3.1 caps transformers at <5.0. Recent Colab images may
+# ship transformers>=5.x; the notebook asserts the version and, if it cannot be
+# satisfied, bumps sentence-transformers to a Colab-compatible 3.x (same Trainer
+# API and same cosine_* metric keys, so no code change is needed).
+sentence-transformers==3.3.1
+datasets
+accelerate>=0.26.0

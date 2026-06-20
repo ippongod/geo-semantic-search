@@ -1,0 +1,26 @@
+# Trained models / embeddings (downloaded from Colab as zip, not committed)
+models/
+outputs/
+checkpoints/
+*.safetensors
+*.zip
+
+# Eval artifacts ARE committed on purpose (results.json / results.md) — CV proof.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Scratch
+*.tmp
+*.log
+tasks/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
